@@ -5,7 +5,7 @@
     function showExpired() {
       const app = document.getElementById('app');
       app.innerHTML = `
-	  <style>
+	  <style type="text/css" media="screen">
       body {
         background-color: #f1f1f1;
         margin: 0;
