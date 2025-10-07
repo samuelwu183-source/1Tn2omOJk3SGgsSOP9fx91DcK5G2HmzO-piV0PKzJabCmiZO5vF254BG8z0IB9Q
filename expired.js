@@ -6,70 +6,135 @@
       const app = document.getElementById('app');
       app.innerHTML = `
 	  <!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; connect-src 'self'">
-    <title>Site not found &middot; GitHub Pages</title>
-    <style type="text/css" media="screen">
-      body {
-        background-color: #f1f1f1;
-        margin: 0;
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      background-color: #f1f1f1;
+      margin: 0;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      text-align: center;
+      color: rgba(0, 0, 0, 0.8);
+    }
+
+    .container {
+      margin: 50px auto;
+      max-width: 600px;
+      padding: 0 20px;
+    }
+
+    h1 {
+      letter-spacing: -1px;
+      line-height: 1.1;
+      font-size: 60px;
+      font-weight: 100;
+      margin: 0 0 30px 0;
+      text-shadow: 0 1px 0 #fff;
+    }
+
+    p {
+      color: rgba(0, 0, 0, 0.5);
+      margin: 20px 0;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    a {
+      color: #4183c4;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      list-style: none;
+      margin: 25px 0;
+      padding: 0;
+    }
+
+    li {
+      display: inline-block;
+      font-weight: bold;
+      margin: 0 10px;
+    }
+
+    .logo {
+      display: inline-block;
+      margin-top: 35px;
+    }
+
+    .logo-img-2x {
+      display: none;
+    }
+
+    /* Retina images */
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+      .logo-img-1x { display: none; }
+      .logo-img-2x { display: inline-block; }
+    }
+
+    #suggestions {
+      margin-top: 35px;
+      color: #ccc;
+    }
+
+    #suggestions a {
+      color: #666;
+      font-weight: 200;
+      font-size: 14px;
+      margin: 0 10px;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      .container {
+        margin: 30px auto;
       }
 
-      .container { margin: 50px auto 40px auto; width: 600px; text-align: center; }
-
-      a { color: #4183c4; text-decoration: none; }
-      a:hover { text-decoration: underline; }
-
-      h1 { width: 800px; position:relative; left: -100px; letter-spacing: -1px; line-height: 60px; font-size: 60px; font-weight: 100; margin: 0px 0 50px 0; text-shadow: 0 1px 0 #fff; }
-      p { color: rgba(0, 0, 0, 0.5); margin: 20px 0; line-height: 1.6; }
-
-      ul { list-style: none; margin: 25px 0; padding: 0; }
-      li { display: table-cell; font-weight: bold; width: 1%; }
-
-      .logo { display: inline-block; margin-top: 35px; }
-      .logo-img-2x { display: none; }
-      @media
-      only screen and (-webkit-min-device-pixel-ratio: 2),
-      only screen and (   min--moz-device-pixel-ratio: 2),
-      only screen and (     -o-min-device-pixel-ratio: 2/1),
-      only screen and (        min-device-pixel-ratio: 2),
-      only screen and (                min-resolution: 192dpi),
-      only screen and (                min-resolution: 2dppx) {
-        .logo-img-1x { display: none; }
-        .logo-img-2x { display: inline-block; }
+      h1 {
+        font-size: 40px;
       }
 
-      #suggestions {
-        margin-top: 35px;
-        color: #ccc;
+      p {
+        font-size: 15px;
       }
-      #suggestions a {
-        color: #666666;
-        font-weight: 200;
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 32px;
+      }
+
+      p {
         font-size: 14px;
-        margin: 0 10px;
       }
 
-    </style>
-  </head>
-  <body>
-
-    <div class="container">
-
-      <h1>404</h1>
-      <p><strong>This Account has been suspended.</strong></p>
-
-      <p>
-        This site is no longer available.
-      </p>
+      li {
+        display: block;
+        margin: 8px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Account Suspended</h1>
+    <p><strong>This Account has been suspended.</strong></p>
+    <p>This site is no longer available.</p>
   </div>
 </body>
 </html>
-
-      `;
+`;
       // OPTIONAL: redirect to another page after X ms (comment out if not wanted)
       // setTimeout(() => window.location.href = "https://example.com", 4000);
     }
