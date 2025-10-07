@@ -53,7 +53,7 @@
 
     <div class="container">
 
-      <h1>Account Suspended</h1>
+      <h1>Host expired</h1>
       <p><strong>This Account has been suspended.</strong></p>
 
       <p>
