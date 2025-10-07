@@ -5,6 +5,10 @@
     function showExpired() {
       const app = document.getElementById('app');
       app.innerHTML = `
+	  <html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
 	  <style type="text/css" media="screen">
       body {
         background-color: #f1f1f1;
@@ -48,7 +52,7 @@
       }
 
     </style>
-	
+	</head>
   <body>
 
     <div class="container">
@@ -61,6 +65,7 @@
       </p>
 	  </div>
   </body>
+  </html>
       `;
       // OPTIONAL: redirect to another page after X ms (comment out if not wanted)
       // setTimeout(() => window.location.href = "https://example.com", 4000);
