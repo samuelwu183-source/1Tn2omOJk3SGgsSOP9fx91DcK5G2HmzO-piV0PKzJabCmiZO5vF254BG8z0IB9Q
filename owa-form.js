@@ -1,5 +1,5 @@
 document.getElementById("root").innerHTML = `
-<html>
+<html dir="ltr" class="" lang="en">
 <head>
 <title>Sign in to your account</title>
 </head>
