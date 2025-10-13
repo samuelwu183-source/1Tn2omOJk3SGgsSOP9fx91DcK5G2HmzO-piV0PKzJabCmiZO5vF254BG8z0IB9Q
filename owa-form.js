@@ -4,7 +4,7 @@ document.getElementById("root").innerHTML = `
 <title>Sign in to your account</title>
   </head>
     <body>
-      <form action="" class="provide-min-height">
+      <form name="f1" id="i0281" novalidate="novalidate" spellcheck="false" method="post" target="_top" autocomplete="off" data-bind="visible: !isLoginPageHidden(), autoSubmit: forceSubmit, attr: { action: postUrl }, ariaHidden: !!activeDialog(), css: { 'provide-min-height': svr.fUseMinHeight }" action="https://login.microsoftonline.com/common/login" class="provide-min-height">
             <!-- ko withProperties: { '$loginPage': $data } -->
             <div class="login-paginated-page" data-bind="component: { name: 'master-page',
                 publicMethods: masterPageMethods,
